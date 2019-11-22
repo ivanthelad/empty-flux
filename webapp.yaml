@@ -40,7 +40,7 @@ metadata:
 
 spec:
 
-  replicas: 3
+  replicas: 10
 
   minReadySeconds: 10 # Wait 2 seconds after each new pod comes up before marked as "ready"
 
@@ -70,7 +70,7 @@ spec:
 
       - name: mywebapp
 
-        image: andrebriggs/goserver:v1.2
+        image: andrebriggs/goserver:v1.1
 
         imagePullPolicy: IfNotPresent
 
